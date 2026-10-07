@@ -18,7 +18,7 @@ public class ConditionSwitch {
 	
 	public void method1() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("메뉴 번호를 입력하세요 > ");
+		System.out.print("메뉴 번호를 입력하세요 >2 ");
 		int menuNo = sc.nextInt();
 		
 		// 1번 : 1000원, 2: 500, 3:4000, 4:1000
