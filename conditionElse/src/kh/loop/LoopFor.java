@@ -2,6 +2,8 @@ package kh.loop;
 
 import java.util.Iterator;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 
 // 반복문
@@ -36,8 +38,22 @@ public class LoopFor {
 		System.out.print("몇 단을 출력하시겠어요 > ");
 		int dan = sc.nextInt();
 		System.out.println(dan + "단을 출력하겠습니다.");
-		
-		System.out.println(dan + " X 1 =" );
+		/*
+		 * System.out.println(dan + " X 1 =" + (dan *1)); System.out.println(dan +
+		 * " X 2 =" + (dan *2)); System.out.println(dan + " X 3 =" + (dan *3));
+		 * System.out.println(dan + " X 4 =" + (dan *4)); System.out.println(dan +
+		 * " X 5 =" + (dan *5)); System.out.println(dan + " X 6 =" + (dan *6));
+		 * System.out.println(dan + " X 7 =" + (dan *7)); System.out.println(dan +
+		 * " X 8 =" + (dan *8)); System.out.println(dan + " X 9 =" + (dan *9));
+		 */
+		/*
+		 * for (int i = 0; i <= 9; i++) { System.out.println(dan + " X " + i + " = " +
+		 * (dan * i)); }
+		 */
+		String gugudan = IntStream.rangeClosed(1, 9)
+				.mapToObj(i -> "%d X %d = %d".formatted(dan, i ,dan * i))
+				.collect(Collectors.joining("/n"));
+		System.out.println(gugudan);
 	}
 }
 
