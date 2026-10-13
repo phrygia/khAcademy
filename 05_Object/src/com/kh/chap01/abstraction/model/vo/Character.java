@@ -8,6 +8,16 @@ public class Character {
 	public String job;
 	public String hairStyle;
 	
+
+	// 기본생성자
+	public Character() {}
+	public Character(String nickname, int level, String job, String hairStyle) {
+		this.nickname = nickname;
+		this.level = level;
+		this.job = job;
+		this.hairStyle = hairStyle;
+	}
+	
 	public void jump() {
 		System.out.println(nickname + "이(가) 점프합니다.");
 		level--;

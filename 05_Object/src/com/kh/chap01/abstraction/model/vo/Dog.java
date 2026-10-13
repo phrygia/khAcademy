@@ -15,6 +15,15 @@ public class Dog {
 	public char gender; // 성별 -> M/F(남,여)
 	public boolean neuter; 
 	
+	public Dog() {}
+	public Dog(String name, String speices, int age, char gender, boolean neuter) {
+		this.name = name;
+		this.speices = speices;
+		this.age = age;
+		this.gender = gender;
+		this.neuter = neuter;
+	}
+	
 	// [생성자부] - 
 	
 	

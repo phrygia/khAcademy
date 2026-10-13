@@ -13,10 +13,17 @@ public class CarDrive {
 	 * 감속하다 - decelerate 
 	 * 정지하기 - stopCar 
 	*/
-	
 	public String type;
 	public int speed;
 	public String color;
+	
+	// 기본생성자
+	public CarDrive() {}
+	public CarDrive(String type, int speed, String color) {
+		this.type = type;
+		this.speed = speed;
+		this.color = color;
+	}
 	
 	public void accelerate() {
 		System.out.println(color + "색 자동차가 스피드를 올립니다~~!!!");
@@ -36,4 +43,6 @@ public class CarDrive {
 		System.out.println(color + "색 " + type + " 자동차가 차량이 멈췄습니다.");
 		speed = 0;
 	}
+	
+	
 }
