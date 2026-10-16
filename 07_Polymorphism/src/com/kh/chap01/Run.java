@@ -34,7 +34,9 @@ public class Run {
 //		원래라면 Child1, Child2 타입이기때문에 2개를 선언해야함
 		Parent[] arr = {new Child1(), new Child1(), new Child2(), new Child2()};
 		for (int i = 0; i < arr.length; i++) {
-			arr[i].print(); // 동적 바인딩 - 오
+			arr[i].print(); // 동적 바인딩 
 		}
+		
+		
 	}
 }
